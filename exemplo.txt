@@ -1,0 +1,23 @@
+%{
+    Aqui fica as definições
+/* Código C incluído no começo do programa */
+%}
+
+%%
+Aqui fica as regras
+/* Expressões regulares e ações */
+regex1     { ação1 }
+regex2     { ação2 }
+
+%%
+
+/* Funções auxiliares em C */
+
+
+Terminal
+
+flex nome_arquivo.l  -> para gerar lex.yy.c
+
+gcc -o nome_do_executavel lex.yy.c -ll  -> Para compilar
+
+./nome_do_executavel -> para rodar
